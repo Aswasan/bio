@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My profile</title>
+    <link rel="shortcut icon" href="-1_orig.jpeg" type="png">
+    <link rel="stylesheet" href="my.css">
+    <script>
+        function home(){
+            window.location.href ="index.html";
+        }
+        function about(){
+            window.location.href ="myblog.html";
+        }
+        function gallary(){
+            window.location.href ="photo.html";
+        }
+function contact(){
+    window.location.href ="contact.html";
+}
+
+    </script>
+</head>
+<body>
+ 
+    <header class="head">
+    <a href="#home" class="hm"  id="hme" onclick="home()">Home</a>
+    <a href="#about" class="hm" id="abt" onclick="about()">About</a>
+    <a href="#gallary" class="hm" id="gly" onclick="gallary()">Gallary</a>
+    <a href="#contact" class="hm" id="ctc" onclick="contact()">Contact</a>
+    </header>
+    
+    <body>
+      <style>
+          @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Sedgwick+Ave+Display&display=swap");
+  
+  :root {
+    --bg-clr: url("lightbg.png.png");
+    --white: #fff;
+    --rleft-bg: #3fc6c6;
+    --rright-bg: #548181;
+    --primary-text-clr: black;
+    --icon-bg: #3fa2a2;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: "Open Sans", sans-serif;
+  }
+  
+  body {
+    background: var(--bg-clr);
+    font-size: 12px;
+    line-height: 20px;
+    color: var(--primary-text-clr);
+    padding: 0 20px;
+  }
+  
+  h2 {
+    font-family: "Sedgwick Ave Display", cursive;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 10px;
+    letter-spacing: 5px;
+  }
+  
+  ul li {
+    color: var(--white);
+  }
+  
+  .resume {
+    width: 800px;
+    max-width: 100%;
+    height: auto;
+    margin: 50px auto;
+    background: var(--white);
+  }
+  
+  .resume_top {
+    display: flex;
+    width: 100%;
+    height: 150px;
+    position: relative;
+  }
+  
+  .resume_top .rtop_left,
+  .resume_top .rtop_right {
+    width: 50%;
+    padding: 35px;
+  }
+  
+  .resume_top .rtop_left,
+  .resume_bottom .rbottom_left {
+    background: var(--rleft-bg);
+  }
+  .resume_top .rtop_right,
+  .resume_bottom .rbottom_right {
+    background: var(--rright-bg);
+  }
+  
+  .resume_top .rtop_left .name {
+    font-size: 40px;
+    line-height: 48px;
+    font-family: "Sedgwick Ave Display", cursive;
+  }
+  
+  .resume_top .rtop_left .role {
+    font-size: 16px;
+    line-height: 18px;
+    margin-top: 15px;
+    font-family: "Sedgwick Ave Display", cursive;
+    letter-spacing: 5px;
+    color: var(--white);
+  }
+  
+  .resume_top .rtop_right p {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 10px;
+    text-align: right;
+  }
+  
+  .resume_top .r_profile_pic {
+    position: absolute;
+    top: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .resume_top .r_profile_pic img {
+    width: 150px;
+  }
+  
+  .resume_center {
+    padding: 75px 35px 35px;
+    text-align: center;
+  }
+  
+  .resume_bottom {
+    display: flex;
+  }
+  
+  .resume_bottom > div {
+    padding: 35px;
+    width: 50%;
+  }
+  
+  .resume_bottom .rb_skills,
+  .resume_bottom .r_education {
+    margin-bottom: 35px;
+  }
+  
+  .resume_bottom .rbottom_left ul li {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .resume_bottom .rbottom_left ul li p:first-child {
+    width: 45px;
+    height: 45px;
+    background: var(--icon-bg);
+    margin-right: 15px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    color: var(--white);
+  }
+  
+  .resume_bottom .rbottom_left ul li p:last-child {
+    width: calc(100% - 45px);
+    text-align: left;
+  }
+  
+  .resume_bottom .rbottom_right > div ul li {
+    display: flex;
+    margin-bottom: 10px;
+  }
+  
+  .resume_bottom .rbottom_right ul li div:first-child {
+    width: 30%;
+    margin-right: 15px;
+  }
+  
+  .resume_bottom .rbottom_right ul li div:last-child {
+    width: 70%;
+  }
+  
+  .resume_bottom .rbottom_right p:first-child {
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+  
+      </style>
+  <script src="https://kit.fontawesome.com/3ef3559250.js" crossorigin="anonymous"></script>
+  
+  <section class="resume">
+    <div class="resume_top">
+      <div class="rtop_left">
+        <p class="name">Aswasan Khadka</p>
+        <p class="role">Web Designer</p>
+      </div>
+      <div class="rtop_right">
+        
+      </div>
+      <div class="r_profile_pic" >
+        <img src="moh.jpg" alt="profile_pic" style="border-radius: 50%;">
+      </div>
+    </div>
+    <div class="resume_center">
+      <h2>About ME</h2>
+      <p style="font-family: 'Times New Roman', Times, serif;font-size: medium;">Hi, My name is Aswasan Khadka.And I'm from kanchanrupnagar,saptari.</p>
+    </div>
+    <div class="resume_bottom">
+      <div class="rbottom_left">
+        <div class="rb_skills">
+          <h2>Skilss</h2>
+          <ul>
+            <li>
+              <p><i class="fa-solid fa-code"></i></p>
+              <p>Web Development</p>
+            </li>
+            <li>
+              <p><i class="fa-solid fa-pen-nib"></i></p>
+              <p>Web Designing</p>
+            </li>
+            <li>
+              <p><i class="fa-solid fa-video"></i></p>
+              <p>Video Editing</p>
+            </li>
+           
+            <li>
+              <p><i class="fa-solid fa-image"></i></p>
+              <p>Photoshop Editing</p>
+            </li>
+          </ul>
+        </div>
+        <div class="rb_hobbies">
+          <h2>Hobbies</h2>
+          <ul>
+            <li>
+              <p><i class="fa-solid fa-pencil"></i></p>
+              <p>Painting</p>
+            </li>
+      
+            <li>
+              <p><i class="fa-solid fa-bicycle"></i></p>
+              <p>Driving</p>
+            </li>
+            <li>
+              <p><i class="fa-solid fa-robot"></i></p>
+              <p>Playing Game</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="rbottom_right">
+        <div class="r_education">
+          <h2>Education</h2>
+          <ul>
+            <li>
+              <div class="r_ed_left">
+                <p>2075 B.S</p>
+              </div>
+              <div class="r_ed_right">
+                <p>Shiksha Sandesh School</p>
+                <p>Complete SEE with A+ Grade. </p>
+              </div>
+            </li><br>
+            <li>
+              <div class="r_ed_left">
+                <p>2076-2078</p>
+              </div>
+              <div class="r_ed_right">
+                <p>Shikshyadeep College</p>
+                <p>Completed higher education with A+ Grade.</p>
+              </div>
+            </li><br>
+            <li>
+              <div class="r_ed_left">
+                <p>2078 B.S</p>
+              </div>
+              <div class="r_ed_right">
+                <p>Sukuna Multiple Campus</p>
+                <p>Join BICTE. </p>
+              </div>
+            </li><br>
+          </ul>
+          
+        </div><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <footer><p><i class="fa-solid fa-globe"></i>aswasankhadka9@gmail.com</p>
+        <p><i class="fa-solid fa-phone"></i>9820711715</p></footer>
+  </section>
+  </body>
+  </html>
+</body>
+</html>

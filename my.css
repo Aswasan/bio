@@ -1,0 +1,27 @@
+
+.hm{
+    
+    position: relative; 
+     top: 10px;
+     left: 83%;
+     text-decoration: none;
+   right: 10%;
+ border: 2px solid black;
+ border-radius:100px;
+   padding: 3px;
+     font-weight: bold;
+     color: azure;
+ }
+.hm:before{
+    content: '';
+    position: absolute;
+    background: aliceblue;
+    width: 0;
+    height: 3px;
+
+    bottom: 0;
+    transition: 0.5s ease;
+}
+.hm:hover:before{
+width: 80%;
+}
