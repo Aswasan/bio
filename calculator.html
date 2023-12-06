@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Calculator</title>
+    <link rel="website icon"  type="png"
+    href="-1_orig.jpeg"
+    sizes="100px">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script>
+        function display(a){
+            calculas.screen.value+= a;
+
+        }
+        function show(){
+        //alert("xa")
+        calculas.screen.value= eval(calculas.screen.value);
+        }
+    </script>
+    <style>
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #f0f0f0;
+    padding: 10%;
+}
+
+form {
+    width: 240px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+input[type="text"] {
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    color: rgb(0, 0, 255);
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="button"], button {
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: lightcyan;
+}
+
+input[type="button"]:hover, button:hover {
+    background-color: #aeeeee;
+}
+
+#clear {
+    background-color: #ff3333;
+    color: #fff;
+    border: none;
+    padding: 8px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#clear:hover {
+    background-color: #cc0000;
+}
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #f0f0f0;
+}
+
+form {
+    width: 180px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #ffffffc2;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+input[type="text"] {
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    color: rgb(0, 0, 255);
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="button"], button {
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: lightcyan;
+}
+
+input[type="button"]:hover, button:hover {
+    background-color: #aeeeee;
+}
+
+#clear {
+    background-color: #ff3333;
+    color: #fff;
+    border: none;
+    padding: 8px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#clear:hover {
+    background-color: #cc0000;
+}
+
+    </style>
+    
+</head>
+<body>
+    <form name="calculas" id="cal">
+        <input type="text" style="color:rgb(0, 0, 255);font-family: 'Times New Roman', Times, serif;font-style: italic; width: 170px;" name="screen" placeholder="Calculator"><br>
+        <input id="seven" type="button"  style="background:lightcyan;width: 30px;" value="7" onclick="display('7')">
+        <input type="button"  style="background:lightcyan;width: 30px;"value="8" onclick="display('8')">
+        <input type="button"  style="background:lightcyan;width: 30px;"value="9" onclick="display('9')">      <input type="button"  style="background:lightcyan;width: 30px;"value="+" onclick="display('+')"><br>
+        <input type="button"  style="background:lightcyan;width: 30px;"value="4" onclick="display('4')">
+        <input type="button"  style="background:lightcyan;width: 30px;"value="5" onclick="display('5')">
+        <input type="button"  style="background:lightcyan;width: 30px;"value="6" onclick="display('6')">     <input type="button" style="background:lightcyan;width: 30px;" value="-" onclick="display('-')"><br>
+        <input type="button"  style="background:lightcyan;width: 30px;"value="1" onclick="display('1')">
+        <input type="button"  style="background:lightcyan;width: 30px;"value="2" onclick="display('2')">
+        <input type="button"  style="background:lightcyan;width: 30px;"value="3" onclick="display('3')">     <input type="button"  style="background:lightcyan;width: 30px;"value="*" onclick="display('*')">
+    <input type="button" value="=" onclick="show()"  style="width: 120px;" >
+    <button id="clear">AC</button>
+    </form>
+</body>
+</html>
